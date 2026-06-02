@@ -1,16 +1,57 @@
-# React + Vite
+# 💰 FamBuget
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Личный семейный трекер бюджета — мой пет-проект для управления тратами и планирования покупок.
 
-Currently, two official plugins are available:
+Personal family budget tracker — my pet project for managing expenses and planning purchases.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🖥 Превью · Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**[fambuget.vercel.app](https://fambuget.vercel.app)**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Что внутри · What's inside
+
+Сделал с нуля — от идеи до задеплоенного продукта:
+
+Built from scratch — from idea to deployed product:
+
+- 🔐 Авторизация через логин/пароль с SHA-256 хешированием · Login/password auth with SHA-256 hashing
+- ☁️ Синхронизация данных между устройствами через Supabase · Cross-device sync via Supabase
+- 📌 Постоянные и разовые траты с закреплением на главный экран · Recurring & one-time expenses with pinning
+- 🛒 Список еды по неделям с привязкой к датам получки · Weekly grocery list tied to paydays
+- 📈 График трат за последние 6 месяцев · Expense chart for the last 6 months
+- 📤 Экспорт в PDF с балансом за месяц · PDF export with monthly balance
+- 🎞 Плавные анимации — слайды, пружинящие чекбоксы, переходы · Smooth animations — slides, spring checkboxes, transitions
+- 📱 Адаптив под iPhone 14/15 · Responsive for iPhone 14/15
+
+---
+
+## 🛠 Стек · Stack
+
+```
+React 18 + Vite
+Framer Motion
+Supabase (PostgreSQL + Auth)
+Vercel
+```
+
+---
+
+## 🎨 Дизайн-токены · Design tokens
+
+```js
+bg:      '#0d0d11'   // background
+surface: '#14141c'   // topbar
+card:    '#1a1a24'   // cards
+accent:  '#c8a96e'   // gold accent
+green:   '#5cc98a'   // done / positive
+red:     '#e87c6b'   // negative / Vika
+blue:    '#7c9cf5'   // Ilya
+```
+
+Fonts: **Unbounded** for headings & numbers, **Golos Text** for body.
+
+---
